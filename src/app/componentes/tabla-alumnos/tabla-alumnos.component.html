@@ -1,0 +1,26 @@
+<p>tabla-alumnos works!</p>
+
+<div class="container">
+    <table class="table table-striped">
+    <thead>
+    <tr>
+    <th>Id</th>
+    <th>Nombre Comp</th>
+    <th>Apellido</th>
+    <th>Curso</th>
+    <td>Accion</td>
+    </tr>
+    
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of alumnosc">
+        <td>        {{item.Id}} </td>
+        <td>        {{item.Nombre}}  </td>
+        <td>        {{item.Apellido}}  </td>
+        <td>        {{item.Curso}}  </td>
+        <td><button type="button" class="btn btn-primary">Eliminar</button> </td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    
