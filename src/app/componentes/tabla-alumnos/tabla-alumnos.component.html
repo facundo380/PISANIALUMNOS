@@ -18,9 +18,18 @@
         <td>        {{item.Nombre}}  </td>
         <td>        {{item.Apellido}}  </td>
         <td>        {{item.Curso}}  </td>
-        <td><button type="button" class="btn btn-primary">Eliminar</button> </td>
+        <td>
+          <button type="button" (click)="Mostrar('el dato {{item.Id}}')" class="btn btn-primary">Eliminar {{item.Nombre}}</button>
+          
+        
+        </td>
       </tr>
     </tbody>
     </table>
     </div>
+    <p>
+      Nombre: {{nombre}}
+      <br>
     
+      Telefono: {{telefono}}
+    </p>

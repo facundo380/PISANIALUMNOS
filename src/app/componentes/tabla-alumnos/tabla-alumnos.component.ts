@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 
@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tabla-alumnos.component.html',
   styleUrls: ['./tabla-alumnos.component.css']
 })
-export class TablaAlumnosComponent  {
+
+//@Input() childMessage: string;
+export class TablaAlumnosComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+
+  
+  @Input()
+  nombre = 'Facundo Pisani';
+ 
+  @Input()
+  telefono: string | undefined;
 
   alumnosc : AlumnosC[]  = [
     {
@@ -26,8 +38,14 @@ export class TablaAlumnosComponent  {
         
     ];
 
+    Mostrar (parametro :String) {
+        alert(parametro )
 
- 
+    }
+    Mostrar2 (parametro :String) {
+      alert(parametro )
+
+  }
 
 }
 
